@@ -24,6 +24,8 @@ cp .ycm_extra_conf.py ~/ficus
   - u撤销 Ctrl+r重做
   - Ctrl+o/i 光标位置回退/前进之前的位置
   - /word 查找单词 或者把光标放到单词上按\* 可以查找当前单词
+  
+![move](https://github.com/OneBen/vim_config/blob/master/move.png)
 
 5.替换命令
   - s/old/new/ 用old替换new，替换当前行的第一个匹配
@@ -33,3 +35,4 @@ cp .ycm_extra_conf.py ~/ficus
   - :10,20 s/^/    /g 在第10行知第20行每行前面加四个空格，用于缩进。
   - ddp 交换光标所在行和其下紧邻的一行。（其实就是删除再粘贴）
   
+
