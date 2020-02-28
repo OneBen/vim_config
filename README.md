@@ -1,18 +1,25 @@
 1. 把里面的文件都放到～/目录下
-2. 编辑.bashrc
+2. 到.vim/bundle/Vundle目录下拉取VundleVim插件
+```
+git clone https://github.com/VundleVim/Vundle.vim
+```
+3. 编辑.bashrc
 ```
 alias vim='/home/nliu/vim/src/vim'
-export VIMRUNTIME='/home/nliu/vim/src/runtime'
+export VIMRUNTIME='/home/nliu/vim/runtime'
 
 source .bashrc
 cp .ycm_extra_conf.py ~/ficus
 ```
-
-3. 若需要vim中粘贴复制到系统剪切板功能
+4. 进入vim编辑器，命令模式 :PluginInstall 安装插件
+```
+:PluginInstall
+```
+5. 若需要vim中粘贴复制到系统剪切板功能
   - sudo apt-get install vim-gui-common 或者 gnome
   - 到.vimrc里去更改vmap映射的 "+y/p 键对应的所需快键键即可
   
-4. 常用移动跳转命令
+6. 常用移动跳转命令
   - F3 跳转 ctrl+o回退
   - 函数列表 tl
   - 文件列表 tt
@@ -27,7 +34,7 @@ cp .ycm_extra_conf.py ~/ficus
   
 ![move](https://github.com/OneBen/vim_config/blob/master/move.png)
 
-5.替换命令
+7.替换命令
   - s/old/new/ 用old替换new，替换当前行的第一个匹配
   - s/old/new/g 用old替换new，替换当前行的所有匹配
   - %s/old/new/ 用old替换new，替换所有行的第一个匹配
