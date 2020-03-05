@@ -7,7 +7,7 @@
 - 插件要求的vim版本8.0以上（包中vim已经满足）
 
 
-## 问题：Your C++ compiler does NOT fully support C++11. 解决
+## 问题：Your C++ compiler does NOT fully support C++11. 解决（Centos7）
 1. Install a package with repository for your system:
   - On CentOS, install package centos-release-scl available in CentOS repository:
   ```shell
