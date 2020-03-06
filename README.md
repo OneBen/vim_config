@@ -35,8 +35,7 @@ cp .ycm_extra_conf.py ~/ficus
   - u撤销 Ctrl+r重做
   - Ctrl+o/i 光标位置回退/前进之前的位置
   - /word 查找单词 或者把光标放到单词上按\* 可以查找当前单词
-  - < 和 >控制缩进
-  
+  - < 和 >控制缩进  
 ![move](https://github.com/OneBen/vim_config/blob/master/move.png)
 
 ### 替换命令
@@ -66,3 +65,18 @@ cp .ycm_extra_conf.py ~/ficus
 - 如果你有一个嵌套了好几层深的折叠，你可以用这个命令把它们全部打开:zR
 - 这将减少折叠直至一个也不剩。而用下面这个命令你可以关闭所有的折叠:zM
 
+### buffer切换（命令模式）
+- :ls b  //List Buffers 查看当前所有的buffer 
+- :bn //Buffer Next 下一个buffer 
+- :bp //Buffer Previous 上一个buffer
+- :bd //Buffer Down 关闭当前buffer
+- :b 2(number) //Buffer number 指定第二个buffer
+- 可在.vimrc中设置快捷键：
+```shell
+"按Ctrl+h 向左移动一个buffer
+nnoremap <C-h> :bp<CR>
+"按Ctrl+l 向右移动一个buffer
+nnoremap <C-l> :bn<CR>
+"按Ctrl+^ 关闭当前buffer
+nnoremap <C-^> :bd<CR>
+```
